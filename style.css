@@ -1,0 +1,387 @@
+body{
+      background-color: #F1F1F1;
+      /* padding-right: -15px; */
+}
+#main{
+      margin-right: -15px;
+}
+
+#header{
+      width: 100%;
+      height: 45px;
+      background-color: #000;
+}
+.icons{
+      float: left;
+      padding: 0 20px;
+      line-height: 45px;
+      color:#fff;
+}
+.search{
+      float: right;
+      line-height: 45px;
+      color:#fff;
+}
+.icons:hover{
+      background-color: #ccc;
+      color:#000;
+}
+#banner{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding:48px 16px;
+}
+.banner-heading{
+      margin:10px 0;
+      font-family: "Oswald";
+      font-size:48px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color:#000;
+      background: -webkit-linear-gradient(#ff1361,#44107a,#fff800);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+.banner-des{
+      display: block;
+      font-family: "Oswald";
+      font-size: 20px;
+      margin:10px 0;
+      color:#000;
+      text-transform:capitalize;
+      font-weight: 700;
+}
+.banner-span{
+      color:#fff;
+      background-color: #000;
+      padding: 5px 8px;
+      font-family: "Oswald";
+      font-size: 20px;
+      border-radius: 25px;
+}
+
+/* slider */
+#slider{
+      background:url('./source-images/jane.jpg') top center / cover no-repeat;
+      padding-top: 50%;
+      position: relative;
+      margin-bottom: 30px;
+}
+.slider-text{
+      position: absolute;
+      top:50%;
+      margin-left:30px
+}
+.slider-text-name{
+      font-size: 36px;
+      color:#fff;
+      text-transform: uppercase;
+      font-family: "Oswald";
+      font-weight: 700;
+      margin: 10px 0;
+      letter-spacing: 4px;
+}
+.slider-slogan{
+      font-size: 65px;
+      color:#fff;
+      text-transform: uppercase;
+      font-family: "Oswald";
+      font-weight: 700;
+      margin: 10px 0;
+}
+.btn-submit{
+      margin:10px 0;
+      padding:8px 16px;
+      text-transform: uppercase;
+      background-color: #ccc;
+      opacity: 0.5;
+      color:#000;
+      font-family: "Oswald";
+      letter-spacing: 2px;
+      border-radius: 25px;
+      /* border:5px solid #d10909; */
+      /* border-right: 5px solid transparent; */
+}
+.btn-submit:hover{
+      color:#fff;
+      background-color: #333;
+      cursor: pointer;
+      transition: 1s ease-in-out;
+      opacity: 1;
+}
+.animate-character{
+      text-transform: uppercase;
+      background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #00ff2f 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      /* text-fill-color: transparent; */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+      to {
+            background-position: 200% center;
+      }
+}
+/* content */
+.main{
+      padding:12px 24px;
+}
+.content-item{
+      box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+      margin:15px 5px;
+      float: left;
+}
+.content-image{
+      width: 100%;
+      padding:0 12px
+}
+.content-item-heading,.content-item-des,.content-item-text,.sidebar-item-heading,.sidebar-item-des{
+      color:#000;
+      padding: 0.15rem 15px;
+      font-family: "Oswald";
+}
+.content-item-heading,.sidebar-item-heading{
+      font-size: 25px;
+      text-transform: uppercase;
+      margin:10px 0;
+      font-weight: bold;
+      letter-spacing: 2px;
+}
+.content-item-des{
+      font-size: 18px;
+      text-transform: capitalize;
+      margin: 10px 0;
+      font-weight: 400;
+}
+.content-item-text,.sidebar-item-des{
+      text-align: justify;
+      font-size: 15px;
+      line-height: 1.5;
+      color:#333;
+      margin:16px 0;
+}
+.content-span{
+      background: rgba(97, 96, 96, 0.6);
+      padding: 0 5px;
+}
+.content-btn{
+      margin-left: 10px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      padding:7px 14px;
+      float:left;
+}
+.content-btn-right{
+      padding:7px 14px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      float: right;
+      margin-right: 10px;
+}
+
+/* side bar */
+.sidebar-item{
+      box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+      margin: 15px 0 !important;
+}
+.sidebar-item:nth-child(1){
+      background-color: #000;
+      text-align: justify;
+}
+.sidebar-image{
+      width: 100%;
+      filter: grayscale(100%);
+}
+.sidebar-item-heading{
+      color:#fff;
+      font-size: 25px;
+      font-family: "Oswald";
+}
+.sidebar-item-des{
+      color:#fff;
+      font-size: 15px;
+      font-family: "Oswald";
+}
+.sidepost{
+      margin-top:15px;
+      box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.sidepost-heading{
+      font-size: 25px;
+      background-color: #a0a0a0;
+      color:#000;
+      padding:15px 10px;
+      text-transform: capitalize;
+      font-weight: 400;
+      font-family: "Raleway", sans-seri;
+      letter-spacing: 2px;
+      margin:0
+}
+.sidepost-item{
+      padding: 10px auto;
+      border-bottom: 1px solid #ccc;
+}
+.sidepost-image{
+      margin-top: 7px !important;
+}
+.sidepost-item:hover{
+      background-color: #797777;
+}
+.sidepost-image{
+      width: 50px;
+      float: left;
+      margin: 0 15px
+}
+.sidepost-title{
+      font-size: 18px;
+      font-family:"Raleway", sans-seri;
+      text-transform: capitalize;
+}
+.sidepost-des{
+      font-size: 15px;
+      font-family:"Raleway", sans-seri;
+}
+
+.advertise{
+      margin-top:15px;
+}
+.advertise-heading{
+      color:#fff;
+      background-color: #000;
+      padding:15px 0 15px 10px;
+      font-size: 25px;
+      font-family: "Oswald";
+      text-transform: capitalize;
+      /* margin-left: 10px; */
+      margin:0;
+}
+.ad{
+      background-color: #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+}
+.ad>p{
+      font-family: 20px;
+      text-transform: capitalize;
+      font-family: "Oswald";
+}
+.tag{
+      margin-top: 15px;
+      box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.tag-heading{
+      font-size: 25px;
+      background-color: #000;
+      color:#fff;
+      padding:15px 10px;
+      text-transform: capitalize;
+      font-weight: 400;
+      font-family: "Raleway", sans-seri;
+      letter-spacing: 2px;
+}
+.tag-section{
+      padding: 15px;
+}
+.tag-heading-span:nth-child(1){
+      padding:0 10px;
+      background-color: #000;
+      color:#fff;
+}
+.tag-heading-span{
+      padding: 0 10px;
+      background-color: #ccc;
+      color:#000;
+      line-height: 1.5;
+      margin-bottom:10px
+}
+.insprire{
+      box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.wrap{
+      background-color: #fff;
+}
+
+.inspiration{
+      color:#fff;
+      background-color: #000;
+      margin-top: 20px;
+      margin-bottom: 0;
+      padding:10px 0 10px 10px;
+      text-transform: capitalize;
+      font-family: "Oswald";
+}
+.wrap img{
+      width: 200px;
+      margin:10px 10px;
+      filter: grayscale(50%);
+}
+
+.follow{
+      box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.follow>h3{
+      color: #fff;
+      background-color: #000;
+      padding:10px 0 10px 10px;
+      text-transform: capitalize;
+      margin-top: 20px;
+      font-family: "Oswald";
+      margin-bottom: 0;
+}
+
+.icon{
+      color:#000;
+      background-color: #ccc;
+      font-size: 15px;
+      padding:10px 10px
+}
+#footer{
+      background-color: #797777;
+      padding:35px 15px
+}
+#footer button{
+      border:none;
+      padding: 12px 24px;
+      margin-right: 15px;
+      font-size: 15px;
+      font-family: "Raleway", sans-seri;
+      text-transform: capitalize;
+
+}
+#footer button:nth-child(2){
+      background-color: #000;
+      color:#fff
+}
+#footer button:nth-child(1):hover{
+      background-color: #363636;
+      color:#f3efef
+}
+#footer button:nth-child(2):hover{
+      background-color: #bfbcbc;
+      color: #000;
+}
+
+
+/* ---------------------------------------------------------------------------------------------- */
+@media  (max-width:390px) {
+      .banner-des{
+            display: none;
+      }
+}
